@@ -24,6 +24,11 @@
     color: #1877F2;
 }
 
+/* Whatsapp */
+.socials .fa-whatsapp {
+    color: #25D366;
+}
+
 /* Hover Effect */
 .socials a:hover i {
     transform: scale(1.2);
