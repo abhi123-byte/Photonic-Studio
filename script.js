@@ -24,11 +24,4 @@ document.querySelectorAll("section").forEach(section => {
     el.classList.add("reveal");
     observer.observe(el);
   });
-});function toggleService(galleryId, element) {
-
-    const gallery = document.getElementById(galleryId);
-
-    gallery.classList.toggle("active");
-
-    element.classList.toggle("open");
-}
+});
