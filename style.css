@@ -33,5 +33,56 @@
 /* Hover Effect */
 .socials a:hover i {
     transform: scale(1.2);
+}/* Expandable Service Galleries */
+
+.service-title {
+    display: grid;
+    grid-template-columns: 70px 1fr 30px;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.service-title h3 {
+    margin: 0;
+}
+
+.service-title b {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.service-gallery {
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 25px 0 30px 70px;
+}
+
+.service-gallery.active {
+    display: grid;
+}
+
+.service-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .service-title {
+        grid-template-columns: 40px 1fr 25px;
+    }
+
+    .service-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 40px;
+        gap: 10px;
+    }
+
+    .service-gallery img {
+        height: 180px;
+    }
 }
 
