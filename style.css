@@ -37,14 +37,20 @@
 
 .service-title {
     display: grid;
-    grid-template-columns: 70px 1fr 30px;
+    grid-template-columns: 70px 1fr 35px;
     align-items: center;
+    gap:20px;
     width: 100%;
     cursor: pointer;
 }
 
 .service-title h3 {
     margin: 0;
+}
+
+.service-title p {
+    margin: 0;
+    font-weight: 400;
 }
 
 .service-title b {
@@ -65,16 +71,21 @@
 
 .service-gallery img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     display: block;
 }
 
 @media (max-width: 768px) {
     .service-title {
         grid-template-columns: 40px 1fr 25px;
+        gap:10px
     }
 
+   .service-title p {
+       display: none;
+   }
+    
     .service-gallery {
         grid-template-columns: repeat(2, 1fr);
         padding-left: 40px;
@@ -82,7 +93,8 @@
     }
 
     .service-gallery img {
-        height: 180px;
+        width: 100%;
+        height: auto;
     }
 }
 
