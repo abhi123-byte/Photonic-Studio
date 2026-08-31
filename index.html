@@ -63,11 +63,84 @@
         <p>Photography tailored around your people, your brand and your story.</p>
       </div>
       <div class="service-list">
-        <article class="service"><span>01</span><h3>Wedding Photography</h3><p>Emotional, candid and cinematic coverage of your day.</p><b>↗</b></article>
-        <article class="service"><span>02</span><h3>Pre-Wedding</h3><p>Editorial-inspired stories created around your chemistry.</p><b>↗</b></article>
-        <article class="service"><span>03</span><h3>Portraits & Fashion</h3><p>Confident portraits for individuals, artists and brands.</p><b>↗</b></article>
-        <article class="service"><span>04</span><h3>Product Photography</h3><p>Clean, premium visuals designed to make products stand out.</p><b>↗</b></article>
-        <article class="service"><span>05</span><h3>Events & Corporate</h3><p>Professional coverage that captures atmosphere and people.</p><b>↗</b></article>
+        <article class="service expandable-service">
+    <div class="service-title" onclick="toggleService('wedding-gallery', this)">
+        <span>01</span>
+        <h3>Wedding Photography</h3>
+        <b>+</b>
+    </div>
+
+    <div id="wedding-gallery" class="service-gallery">
+        <img src="images/wedding1.jpg" alt="Wedding Photography">
+        <img src="images/wedding2.jpg" alt="Wedding Photography">
+        <img src="images/wedding3.jpg" alt="Wedding Photography">
+        <img src="images/wedding4.jpg" alt="Wedding Photography">
+    </div>
+</article>
+
+
+<article class="service expandable-service">
+    <div class="service-title" onclick="toggleService('prewedding-gallery', this)">
+        <span>02</span>
+        <h3>Pre-Wedding</h3>
+        <b>+</b>
+    </div>
+
+    <div id="prewedding-gallery" class="service-gallery">
+        <img src="images/prewedding1.jpg" alt="Pre-Wedding">
+        <img src="images/prewedding2.jpg" alt="Pre-Wedding">
+        <img src="images/prewedding3.jpg" alt="Pre-Wedding">
+        <img src="images/prewedding4.jpg" alt="Pre-Wedding">
+    </div>
+</article>
+
+
+<article class="service expandable-service">
+    <div class="service-title" onclick="toggleService('portrait-gallery', this)">
+        <span>03</span>
+        <h3>Portraits & Fashion</h3>
+        <b>+</b>
+    </div>
+
+    <div id="portrait-gallery" class="service-gallery">
+        <img src="images/portrait1.jpg" alt="Portrait Photography">
+        <img src="images/portrait2.jpg" alt="Portrait Photography">
+        <img src="images/portrait3.jpg" alt="Fashion Photography">
+        <img src="images/portrait4.jpg" alt="Fashion Photography">
+    </div>
+</article>
+
+
+<article class="service expandable-service">
+    <div class="service-title" onclick="toggleService('product-gallery', this)">
+        <span>04</span>
+        <h3>Product Photography</h3>
+        <b>+</b>
+    </div>
+
+    <div id="product-gallery" class="service-gallery">
+        <img src="images/product1.jpg" alt="Product Photography">
+        <img src="images/product2.jpg" alt="Product Photography">
+        <img src="images/product3.jpg" alt="Product Photography">
+        <img src="images/product4.jpg" alt="Product Photography">
+    </div>
+</article>
+
+
+<article class="service expandable-service">
+    <div class="service-title" onclick="toggleService('events-gallery', this)">
+        <span>05</span>
+        <h3>Events & Corporate</h3>
+        <b>+</b>
+    </div>
+
+    <div id="events-gallery" class="service-gallery">
+        <img src="images/event1.jpg" alt="Events & Corporate">
+        <img src="images/event2.jpg" alt="Events & Corporate">
+        <img src="images/event3.jpg" alt="Events & Corporate">
+        <img src="images/event4.jpg" alt="Events & Corporate">
+    </div>
+</article>
       </div>
     </section>
 
