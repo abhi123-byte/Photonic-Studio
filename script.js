@@ -24,4 +24,15 @@ document.querySelectorAll("section").forEach(section => {
     el.classList.add("reveal");
     observer.observe(el);
   });
-});
+});function toggleService(galleryId, element) {
+    const gallery = document.getElementById(galleryId);
+    const plus = element.querySelector("b");
+
+    gallery.classList.toggle("active");
+
+    if (gallery.classList.contains("active")) {
+        plus.textContent = "−";
+    } else {
+        plus.textContent = "+";
+    }
+}
